@@ -1,0 +1,115 @@
+ body {
+   height: 100px;
+   /* background: url(./img/80838a5b5c12aef48678ab8b0266a3e4.png)no-repeat; */
+   background-color: black;
+   background-size: cover;
+   background-repeat: no-repeat;
+   display: grid;
+   justify-content: center;
+   align-items: center;
+ }
+
+ h1 {
+   font-style: oblique;
+   font-family: cursive;
+   text-align: center;
+   background-color: #fff;
+ }
+
+
+
+ .movimiento {
+
+   margin-left: 14%;
+
+ }
+
+ .opciones {
+   position: absolute;
+   transform: translate(-50%, -50%);
+   top: 50%;
+   left: 50%;
+   text-align: center;
+ }
+
+ .cuerpo {
+   height: 70vmin;
+   width: 70vmin;
+   display: grid;
+   grid-template-columns: repeat(3, 100px);
+   grid-template-rows: repeat(3, 100px);
+   gap: 2vmin;
+
+ }
+
+ .botones {
+
+   width: 75px;
+   height: 75px;
+   background-color: aliceblue;
+   text-align: center;
+   background: transparent;
+   border: 2px solid rgba(255, 255, 255, .2);
+   backdrop-filter: blur(20px);
+   box-shadow: 0 0 10px rgb(0, 0, 0, .2);
+
+ }
+
+ /* informacion obtenidad de https://acortar.link/Z8P6rz */
+ /*** ESTILOS BOTÓN SLIDE RIGHT ***/
+ .ov-btn-slide-right {
+   background: #fff;
+   /* color de fondo */
+   color: #000404;
+   /* color de fuente */
+   border: 2px solid #d741a7;
+   /* tamaño y color de borde */
+   padding: 16px 20px;
+   border-radius: 3px;
+   /* redondear bordes */
+   position: relative;
+   z-index: 1;
+   overflow: hidden;
+   display: inline-block;
+
+ }
+
+ .ov-btn-slide-right:hover {
+   color: #fff;
+   /* color de fuente hover */
+
+ }
+
+ .ov-btn-slide-right::after {
+   content: "";
+   background: #b641d7;
+   /* color de fondo hover */
+   position: absolute;
+   z-index: -1;
+   padding: 16px 20px;
+   display: block;
+   top: 0;
+   bottom: 0;
+   left: 100%;
+   right: -100%;
+   -webkit-transition: all 0.35s;
+   transition: all 0.35s;
+
+ }
+
+ .ov-btn-slide-right:hover::after {
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   -webkit-transition: all 0.35s;
+   transition: all 0.35s;
+
+ }
+
+ .boton {
+
+   width: 25px;
+   height: 25px;
+
+ }

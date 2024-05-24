@@ -1,28 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>juego</title>
+    <link rel="stylesheet" href="./css/gato y el raton.css">
+    <!-- estilo de funte de letra -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Pacifico&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
-    
-<section id="inicio">
 
-    <!-- se utiliza para definir un contenido autónomo y de importancia en una página web -->
-    <article id="comandos">
-        <input type="text" id="jugador1"> <br>
-        <input type="button" id="inicio" value="comenzar">
-    </article>
-   
+    <div class="opciones">
+        <h1>TIC TAC TOE</h1>
+        <div class="movimiento">
+            <div id="indicadorTurno">Turno de: Jugador 1 ()</div>
+            <div class="cuerpo">
+                <button id="b1" class="botones" onclick="acciones(this)"></button>
+                <button id="b2" class="botones" onclick="acciones(this)"></button>
+                <button id="b3" class="botones" onclick="acciones(this)"></button>
+                <button id="b1" class="botones" onclick="acciones(this)"></button>
+                <button id="b2" class="botones" onclick="acciones(this)"></button>
+                <button id="b3" class="botones" onclick="acciones(this)"></button>
+                <button id="b1" class="botones" onclick="acciones(this)"></button>
+                <button id="b2" class="botones" onclick="acciones(this)"></button>
+                <button id="b3" class="botones" onclick="acciones(this)"></button>
+            </div>
+        </div>
+        <a href="#" id="iniciar" class="ov-btn-slide-right" onclick="iniciarJuego()">Empieza el Juego</a>
+        <audio class="background_audio" loop>
+            <source
+                src="../proyecto3/music/Fullmetal Alchemist_ Brotherhood - Opening 3 [4K 60FPS _ Creditless _ CC] (320).mp3"
+                type="audio/mp3">
+        </audio>
+        <audio src="./music/Fullmetal Alchemist_ Brotherhood - Opening 3 [4K 60FPS _ Creditless _ CC] (320).mp3"
+            type="audio/mpeg" controls autoplay></audio>
 
+    </div>
 
-
-
-
-
-</section>
-
+    <img src="css/img/80838a5b5c12aef48678ab8b0266a3e4.png" alt="" id="imagen1">
     <script src="./java.js"></script>
 </body>
+
 </html>
